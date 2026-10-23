@@ -9,23 +9,13 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="/" class="logo">My Portfolio</a>
-
-            <ul class="nav-links">
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('partials/header.html') %>
 
     <main>
         <section class="intro">
             <p>WELCOME TO MY PORTFOLIO</p>
 
-            <h1>Hi, I'm Vaqueros.</h1>
+            <h1>Hi, I'm <%= username %>.</h1>
 
             <p>
                 Building websites and learning modern web development.
@@ -37,22 +27,7 @@
 
     </main>
 
-    <footer>
-        <ul class="social-links">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
-
-        <ul class="footer-links">
-            <li><a href="/home.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
-
-        <p>Powered by Vaqueros @ 3330</p>
-    </footer>
+    <%- include('partials/footer.html') %>
 
 </body>
 </html>
